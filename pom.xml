@@ -518,13 +518,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<modules>
-		<!-- Idea: personal notes attached to any object -->
-		<module>all</module>
-		<module>contact</module>
-		<module>password</module>
-		<module>procedure</module>
-		<module>task</module>
-	</modules>
 </project>
