@@ -67,7 +67,8 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	<licenses>
 		<license>
 			<name>non-exclusive, non-transferable, non-redistributable</name>
-			<url>https://pragmatickm.com/licenses/pragmatickm-1.0.txt</url>
+			<url>https://aoindustries.com/licenses/ao-private-1.0.txt</url>
+			<distribution>repo</distribution>
 		</license>
 	</licenses>
 
