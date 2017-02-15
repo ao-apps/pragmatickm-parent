@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 pragmatickm-parent - Parent POM for all PragmaticKM packages.
-Copyright (C) 2016  AO Industries, Inc.
+Copyright (C) 2016, 2017  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -332,22 +332,25 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				</pluginManagement>
 			</build>
 		</profile>
-		<!-- Disable doclint in Java 1.8+ -->
+		<!-- Disable doclint and allow-script-in-comments in Java 1.8+ -->
 		<profile>
-			<id>doclint-java8-disable</id>
+			<id>java8-javadoc</id>
 			<activation>
 				<jdk>[1.8,)</jdk>
 			</activation>
 			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<configuration>
-							<additionalparam>-Xdoclint:none</additionalparam>
-						</configuration>
-					</plugin>
-				</plugins>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-javadoc-plugin</artifactId>
+							<configuration>
+								<additionalparam>-Xdoclint:none</additionalparam>
+								<additionalparam>--allow-script-in-comments</additionalparam>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
 			</build>
 		</profile>
 		<!-- Do not pack the war in "skip-war" profile -->
