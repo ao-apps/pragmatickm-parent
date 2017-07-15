@@ -39,10 +39,17 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		-->
 		<javac.bootclasspath>${bootclasspath.jdk18}</javac.bootclasspath>
 		<!-- The version of Java apidocs to link to, preferring https -->
+		<javac.link.javaApi.jdk15>https://docs.oracle.com/javase/1.5.0/docs/api/</javac.link.javaApi.jdk15>
 		<javac.link.javaApi.jdk16>https://docs.oracle.com/javase/6/docs/api/</javac.link.javaApi.jdk16>
 		<javac.link.javaApi.jdk17>https://docs.oracle.com/javase/7/docs/api/</javac.link.javaApi.jdk17>
 		<javac.link.javaApi.jdk18>https://docs.oracle.com/javase/8/docs/api/</javac.link.javaApi.jdk18>
+		<javac.link.javaApi.jdk19>http://download.java.net/java/jdk9/docs/api/</javac.link.javaApi.jdk19>
 		<javac.link.javaApi>${javac.link.javaApi.jdk16}</javac.link.javaApi>
+		<!-- The Java EE apidocs to link to, preferring https -->
+		<javac.link.javaeeApi.5>https://docs.oracle.com/javaee/5/api/</javac.link.javaeeApi.5>
+		<javac.link.javaeeApi.6>https://docs.oracle.com/javaee/6/api/</javac.link.javaeeApi.6>
+		<javac.link.javaeeApi.7>https://docs.oracle.com/javaee/7/api/</javac.link.javaeeApi.7>
+		<javac.link.javaeeApi.8>http://www.oracle.com/technetwork/java/javaee/overview/index.html</javac.link.javaeeApi.8>
 		<!-- The breadcrumbs for the javadocs -->
 		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://pragmatickm.com/">PragmaticKM</a>
 / <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
