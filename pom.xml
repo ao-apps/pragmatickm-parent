@@ -228,14 +228,11 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>3.0.1</version>
 				</plugin>
-				<!-- Setup a few global plugin versions so we don't have to specify elsewhere -->
-				<!-- This also keeps the output of versions:display-plugin-updates more meaningful -->
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>2.10.4</version>
-				</plugin>
-				<!-- Set the versions of other plugins otherwise inherited from the super-pom without versions -->
+				<!--
+					Setup a few global plugin versions so we don't have to specify elsewhere.
+					This includes the versions of other plugins inherited from the super-pom without versions.
+					This also keeps the output of versions:display-plugin-updates more meaningful.
+				-->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-clean-plugin</artifactId>
@@ -250,6 +247,16 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-install-plugin</artifactId>
 					<version>2.5.2</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.10.4</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
