@@ -4,8 +4,8 @@ Parent POM for all [PragmaticKM](https://pragmatickm.com/) packages.
 ## Project Links
 * [Project Home](https://pragmatickm.com/parent/)
 * [Changelog](https://pragmatickm.com/parent/changelog)
-* [Maven Repository](scpexe://private.cvs.aoindustries.com/var/maven2/pragmatickm)
-* [Git](ssh://private.cvs.aoindustries.com/var/git/pragmatickm-parent)
+* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.pragmatickm%22%20AND%20a:%22pragmatickm-parent%22)
+* [GitHub](https://github.com/aoindustries/pragmatickm-parent)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
