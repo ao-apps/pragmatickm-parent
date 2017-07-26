@@ -40,7 +40,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://pragmatickm.com/">PragmaticKM</a>
 / <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 		<shortTitle>Parent</shortTitle>
-		<google.analytics.trackingId><!-- TODO: New code -->UA-8801760-45</google.analytics.trackingId>
+		<google.analytics.trackingId>UA-86871646-7</google.analytics.trackingId>
 	</properties>
 
 	<name>PragmaticKM Parent</name>
