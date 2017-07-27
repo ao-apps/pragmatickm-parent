@@ -61,7 +61,6 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 			datePublished="2017-07-26T23:30:40-0500"
 			groupId="@{documented.groupId}"
 			artifactId="@{documented.artifactId}"
-			repository="https://aorepo.org/maven2"
 			scmUrl="@{documented.scm.url}"
 		>
 			<ul>
