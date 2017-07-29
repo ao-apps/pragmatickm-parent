@@ -27,13 +27,13 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 	<parent>
 		<groupId>com.aoindustries</groupId>
 		<artifactId>ao-oss-parent</artifactId>
-		<version>1.0.3</version>
+		<version>1.0.4-validation-SNAPSHOT</version>
 		<relativePath>../../ao-oss-parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.pragmatickm</groupId>
 	<artifactId>pragmatickm-parent</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
+	<version>1.0.3-validation-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
