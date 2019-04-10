@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 pragmatickm-parent - Parent POM for all PragmaticKM packages.
-Copyright (C) 2016, 2017  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -43,7 +43,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		<google.analytics.trackingId>UA-86871646-7</google.analytics.trackingId>
 	</properties>
 
-	<name>PragmaticKM Parent</name>
+	<name>PragmaticKM 1 Parent</name>
 	<url>https://pragmatickm.com/parent/</url>
 	<description>Parent POM for all PragmaticKM packages.</description>
 	<inceptionYear>2016</inceptionYear>
