@@ -34,7 +34,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.groupId>com.pragmatickm</documented.groupId><documented.artifactId>pragmatickm-parent</documented.artifactId>
-		<documented.name>PragmaticKM 1 Parent</documented.name>
+		<documented.name>PragmaticKM Parent</documented.name>
 		<documented.shortTitle>Parent</documented.shortTitle>
 		<documented.url>https://pragmatickm.com/parent/</documented.url>
 		<documented.description>Parent POM for all PragmaticKM packages.</documented.description>

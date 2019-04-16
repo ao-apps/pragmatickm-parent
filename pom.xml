@@ -39,7 +39,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		<google.analytics.trackingId>UA-86871646-7</google.analytics.trackingId>
 	</properties>
 
-	<name>PragmaticKM 1 Parent</name>
+	<name>PragmaticKM Parent</name>
 	<url>https://pragmatickm.com/parent/</url>
 	<description>Parent POM for all PragmaticKM packages.</description>
 	<inceptionYear>2016</inceptionYear>
