@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 pragmatickm-parent - Parent POM for all PragmaticKM packages.
-Copyright (C) 2017  AO Industries, Inc.
+Copyright (C) 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -34,19 +34,23 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2017-07-25T22:33:43-0500"
+		dateModified="2019-06-01T00:46:53-0500"
 	>
 		<core:child page="changelog" />
-		<ao:include
-			page="/ao-badges/badges.inc.jspx"
-			arg.projectStatus="${currentPage.property.projectStatus}"
-			arg.managementStatus="${currentPage.property.managementStatus}"
-			arg.packagingStatus="${currentPage.property.packagingStatus}"
-			arg.semanticVersioning="${currentPage.property.semanticVersioning}"
-			arg.license="${currentPage.property.license}"
-		/>
+		<header>
+			<ao:include
+				page="/ao-badges/badges.inc.jspx"
+				arg.projectStatus="${currentPage.property.projectStatus}"
+				arg.managementStatus="${currentPage.property.managementStatus}"
+				arg.packagingStatus="${currentPage.property.packagingStatus}"
+				arg.semanticVersioning="${currentPage.property.semanticVersioning}"
+				arg.license="${currentPage.property.license}"
+			/>
+		</header>
 		<p>
 			Parent POM for all <core:link book="/" page="/" /> packages.
 		</p>
+		<!-- TODO: Here and all books: section:nav for Project Links -->
 		<section:section label="Project Links">
 			<ul>
 				<li><core:link page="/">Project Home</core:link></li>
