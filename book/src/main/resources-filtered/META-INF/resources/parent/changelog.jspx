@@ -36,7 +36,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T22:33:43-0500"
-		dateModified="2019-07-06T22:25:33-0500"
+		dateModified="2019-07-22T04:39:27-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.pragmatickm:pragmatickm-parent:pom.version}" />
@@ -129,6 +129,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 						<li>Updated dependency versions</li>
 						<li>Updated javadocs</li>
 						<li>Updated documentation</li>
+						<li>Updated unit tests</li>
 						<li>Other changes to white-space or comments</li>
 					</ol>
 					<p>
