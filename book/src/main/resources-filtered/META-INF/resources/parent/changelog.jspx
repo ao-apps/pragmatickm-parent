@@ -36,7 +36,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T22:33:43-0500"
-		dateModified="2019-06-04T18:59:55-0500"
+		dateModified="2019-09-24T21:09:15-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.pragmatickm:pragmatickm-parent:pom.version}" />
@@ -53,10 +53,103 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
-					<li>Updated version of <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a>.</li>
+					<li>
+						<p>
+							Set delimiters for <ao:a href="https://maven.apache.org/plugins/maven-war-plugin/">maven-war-plugin</ao:a>
+							to match the configuration of <ao:a href="https://maven.apache.org/plugins/maven-resources-plugin/">maven-resources-plugin</ao:a>,
+							using <code>@{*}</code>.
+						</p>
+						<p>
+							Also enabled <ao:a href="https://maven.apache.org/plugins/maven-war-plugin/war-mojo.html#filteringDeploymentDescriptors">filteringDeploymentDescriptors</ao:a>
+							by default.
+						</p>
+					</li>
+					<li>Java updates:
+						<ol type="a">
+							<li>Java 12 is now end-of-life</li>
+							<li>Java 13 is now current stable</li>
+							<li>Java 14 is new beta</li>
+						</ol>
+					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.2.1"
+			datePublished="2019-06-29T18:29:46-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>
+					Changed <code>Include-Resource</code> to <code>{maven-resources}, target/resources-filtered</code>
+					in order to not leak full build paths into <code>META-INF/MANIFEST.MF</code>
+				</li>
+			</ul>
+		</changelog:release>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.2.0"
+			datePublished="2019-06-23T11:51:15-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a>.</li>
+				<li>New profile "POST-SNAPSHOT" that enables the use of
+					post-release builds as dependencies.
+					<p>
+						This profile is not active by default.
+						Activate in <code>~/.m2/settings.xml</code> to use post-release builds as dependencies:
+					</p>
+<pre><![CDATA[		&lt;profile&gt;
+			&lt;id&gt;POST-SNAPSHOT&lt;/id&gt;
+			&lt;activation&gt;
+				&lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+			&lt;/activation&gt;
+			&lt;properties&gt;
+				&lt;POST-SNAPSHOT&gt;-POST-SNAPSHOT&lt;/POST-SNAPSHOT&gt;
+			&lt;/properties&gt;
+		&lt;/profile&gt;]]></pre>
+					<p>
+						This profile must not be active while performing a release.  Deactivate with:
+					</p>
+					<pre>mvn -Prelease,'!POST-SNAPSHOT' …</pre>
+					<p>
+						Post-release builds happen after a release and before a new -SNAPSHOT is
+						started.  They are used to ensure that previous releases still compile
+						against newer dependencies.
+					</p>
+					<p>
+						Furthermore, post-release builds may contain the following changes without
+						being promoted to the next -SNAPSHOT version:
+					</p>
+					<ol>
+						<li>Updated parent POM</li>
+						<li>Updated POM</li>
+						<li>Updated Java version (without any source code changes)</li>
+						<li>Updated dependency versions</li>
+						<li>Updated javadocs</li>
+						<li>Updated documentation</li>
+						<li>Updated unit tests</li>
+						<li>Other changes to white-space or comments</li>
+					</ol>
+					<p>
+						Post-release builds also allow NetBeans to correctly connect projects
+						together for those who are actively developing multiple modules.
+					</p>
+					<p>
+						Those who are only using the dependency can use the regular release to
+						avoid the overhead of the daily check for updates.
+					</p>
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
