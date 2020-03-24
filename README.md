@@ -23,7 +23,7 @@ Parent POM for all [PragmaticKM](https://github.com/aoindustries/pragmatickm) pa
 ## Project Links
 * [Project Home](https://pragmatickm.com/parent/)
 * [Changelog](https://pragmatickm.com/parent/changelog)
-* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.pragmatickm%22%20AND%20a:%22pragmatickm-parent%22)
+* [Maven Central Repository](https://search.maven.org/artifact/com.pragmatickm/pragmatickm-parent)
 * [GitHub](https://github.com/aoindustries/pragmatickm-parent)
 
 ## Contact Us
