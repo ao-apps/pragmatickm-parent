@@ -51,4 +51,9 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		<url>https://github.com/aoindustries/pragmatickm-parent</url>
 		<tag>HEAD</tag>
 	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/aoindustries/pragmatickm-parent/issues</url>
+	</issueManagement>
 </project>
