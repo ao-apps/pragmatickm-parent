@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T22:33:43-0500"
-		dateModified="2020-03-24T21:10:46-05:00"
+		dateModified="2020-04-19T13:39:33-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.pragmatickm:pragmatickm-parent:pom.version}" />
@@ -52,7 +52,21 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			/>
+			>
+				<ul>
+					<li>
+						<p>
+							Newer versions of Javadocs no longer use frames.  We now build
+							API docs with <code>target="_self"</code> for <![CDATA[JDK &gt;= 9]]>.
+						</p>
+						<p>
+							We still supporting building with older JDK versions,
+							in which <code>target="_top"</code> is used so that links
+							can escape the frames.
+						</p>
+					</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
