@@ -112,9 +112,6 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 							</li>
 						</ol>
 					</li>
-					<!-- TODO:
-					<li>Updated plugin versions.</li>
-					-->
 				</ul>
 			</changelog:release>
 		</c:if>
