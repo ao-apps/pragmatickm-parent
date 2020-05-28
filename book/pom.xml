@@ -25,10 +25,10 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.7.0-POST-SNAPSHOT</version>
+		<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.7.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent-book</artifactId><version>1.7.0-POST-SNAPSHOT</version>
+	<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent-book</artifactId><version>1.7.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -110,7 +110,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- Dependency for dependencyversion-maven-plugin only -->
 		<dependency>
-			<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.7.0-POST-SNAPSHOT</version>
+			<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.7.1-SNAPSHOT</version>
 			<type>pom</type>
 			<scope>provided</scope>
 			<optional>true</optional>
