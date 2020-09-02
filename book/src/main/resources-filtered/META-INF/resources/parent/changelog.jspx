@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T22:33:43-0500"
-		dateModified="2020-08-13T17:04:13-05:00"
+		dateModified="2020-09-01T19:46:25-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.pragmatickm:pragmatickm-parent:pom.version}" />
@@ -54,7 +54,9 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{project.scm.url}"
 			>
 				<ul>
-					<li>Added default NetBeans editor settings.</li>
+					<li>Added default NetBeans formatting settings.</li>
+					<li>Added default NetBeans server settings.</li>
+					<li>Added default NetBeans hint settings.</li>
 					<li>Added default NetBeans line ending settings.</li>
 					<li>Added plugin repositories to match repositories.</li>
 					<li>
