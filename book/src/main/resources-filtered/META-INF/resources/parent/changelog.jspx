@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 pragmatickm-parent - Parent POM for all PragmaticKM packages.
-Copyright (C) 2017, 2018, 2019, 2020  AO Industries, Inc.
+Copyright (C) 2017, 2018, 2019, 2020, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T22:33:43-0500"
-		dateModified="2020-12-15T22:39:10-06:00"
+		dateModified="2021-03-02T23:34:29-06:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -53,6 +53,10 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 						Removed offline Javadocs for <code>com.servlets:cos</code>, since we have eradicated it from all projects in favor of
 						<ao:a rel="nofollow" href="@{javadoc.link.javaee}javax/servlet/http/HttpServletRequest.html#getParts()">the standard file upload API</ao:a>
 						and <ao:a href="https://javaee.github.io/javamail/">JavaMail</ao:a>.
+					</li>
+					<li>
+						Added <ao:a href="https://stackoverflow.com/a/57284322">workaround for "undefined" in URL during Javadoc search</ao:a>
+						when project has no modules.
 					</li>
 				</ul>
 			</changelog:release>
