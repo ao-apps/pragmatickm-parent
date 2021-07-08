@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T22:33:43-05:00"
-		dateModified="2021-07-07T01:36:32-05:00"
+		dateModified="2021-07-08T02:13:50-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -102,6 +102,11 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 						The URL should end with a slash (/) and is used for both distributionManagement/snapshotRepository
 						and nexus-staging-maven-plugin/nexusUrl.  Defaults to <ao:a href="https://oss.sonatype.org/" />
 						since groupId <code>com.pragmatickm</code> is on the original Sonatype Nexus Repository Manager.
+					</li>
+					<li>
+						Added new "coverage" profile that enables <ao:a href="https://www.jacoco.org/jacoco/">JaCoCo unit test code coverage</ao:a>.
+						This is expected to primarily be used within continuous integration systems, and may be used as a basis for
+						<ao:a href="https://sonarcloud.io/">SonarCloud</ao:a>/<ao:a href="https://www.sonarqube.org/">SonarQube</ao:a> analysis.
 					</li>
 				</ul>
 			</changelog:release>
