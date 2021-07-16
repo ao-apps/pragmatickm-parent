@@ -8,6 +8,11 @@
 
 [![Build](https://github.com/aoindustries/pragmatickm-parent/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/pragmatickm-parent/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.pragmatickm/pragmatickm-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.pragmatickm/pragmatickm-parent)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-parent&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.pragmatickm%3Apragmatickm-parent)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-parent&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-parent&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-parent&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-parent&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-parent&metric=security_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-parent&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.pragmatickm%3Apragmatickm-parent&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.pragmatickm%3Apragmatickm-parent&metric=Maintainability)
 
 Parent POM for all [PragmaticKM](https://github.com/aoindustries/pragmatickm) packages.
 
