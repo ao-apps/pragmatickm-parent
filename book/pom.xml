@@ -25,10 +25,10 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.11.0-POST-SNAPSHOT</version>
+		<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.11.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent-book</artifactId><version>1.11.0-POST-SNAPSHOT</version>
+	<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent-book</artifactId><version>1.11.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
