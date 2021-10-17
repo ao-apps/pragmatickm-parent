@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T22:33:43-05:00"
-		dateModified="2021-10-16T09:30:18-05:00"
+		dateModified="2021-10-16T21:40:31-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -47,27 +47,36 @@ along with pragmatickm-parent.  If not, see <http://www.gnu.org/licenses />.
 				artifactId="@{documented.artifactId}"
 				repository="@{nexusUrl}content/repositories/snapshots/"
 				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>"skip-war" profile improvements to increase local development speed:
-						<ol>
-							<li>Enforces "development" profile is also active</li>
-							<li>Disables <ao:a href="https://www.simplify4u.org/pgpverify-maven-plugin/">PGP artifact verification</ao:a></li>
-							<li>Disables <ao:a href="https://maven.apache.org/plugins/maven-gpg-plugin/">GPG artifact signing</ao:a></li>
-						</ol>
-					</li>
-					<li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
-					<li>Enabled <ao:a href="https://www.simplify4u.org/pgpverify-maven-plugin/check-mojo.html#verifyProvidedDependencies">verifying PGP keys of "provided" dependencies</ao:a>.</li>
-					<li>Java updates:
-						<ol>
-							<li>Java 16 is now end-of-life</li>
-							<li>Java 17 is now current stable</li>
-							<li>Java 18 is new beta</li>
-						</ol>
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.11.3"
+			datePublished="2021-10-16T21:40:31-05:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>"skip-war" profile improvements to increase local development speed:
+					<ol>
+						<li>Enforces "development" profile is also active</li>
+						<li>Disables <ao:a href="https://www.simplify4u.org/pgpverify-maven-plugin/">PGP artifact verification</ao:a></li>
+						<li>Disables <ao:a href="https://maven.apache.org/plugins/maven-gpg-plugin/">GPG artifact signing</ao:a></li>
+					</ol>
+				</li>
+				<li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
+				<li>Enabled <ao:a href="https://www.simplify4u.org/pgpverify-maven-plugin/check-mojo.html#verifyProvidedDependencies">verifying PGP keys of "provided" dependencies</ao:a>.</li>
+				<li>Java updates:
+					<ol>
+						<li>Java 16 is now end-of-life</li>
+						<li>Java 17 is now current stable</li>
+						<li>Java 18 is new beta</li>
+					</ol>
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
