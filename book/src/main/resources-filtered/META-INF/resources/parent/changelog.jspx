@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-25T22:33:43-05:00"
-    dateModified="2022-05-18T16:00:13-05:00"
+    dateModified="2022-05-29T13:17:45-05:00"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -47,7 +47,12 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li>Updated to <ao:a href="https://checkstyle.org/releasenotes.html#Release_10.3">Checkstyle 10.3</ao:a>.</li>
+          <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release
