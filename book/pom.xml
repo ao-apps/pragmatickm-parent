@@ -25,14 +25,14 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.15.0-POST-SNAPSHOT</version>
+    <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.15.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent-book</artifactId><version>1.15.0-POST-SNAPSHOT</version>
+  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent-book</artifactId><version>1.15.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
   <properties>
-    <project.build.outputTimestamp>2023-02-11T18:08:06Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-02-18T19:43:26Z</project.build.outputTimestamp>
     <module.name>com.pragmatickm.parent.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>pragmatickm-parent</documented.artifactId>
