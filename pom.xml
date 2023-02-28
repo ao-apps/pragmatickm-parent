@@ -29,11 +29,11 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../../oss/parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.15.1</version>
+  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.15.1-POST-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
-    <project.build.outputTimestamp>2023-02-28T01:37:14Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-02-28T01:37:39Z</project.build.outputTimestamp>
     <google.analytics.trackingId>UA-86871646-7</google.analytics.trackingId>
     <!-- com.pragmatickm is on original Sonatype Nexus Repository Manager -->
     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
@@ -75,7 +75,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/pragmatickm-parent.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/pragmatickm-parent.git</developerConnection>
     <url>https://github.com/ao-apps/pragmatickm-parent</url>
-    <tag>pragmatickm-parent-1.15.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
