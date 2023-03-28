@@ -37,10 +37,6 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     <google.analytics.trackingId>UA-86871646-7</google.analytics.trackingId>
     <!-- com.pragmatickm is on original Sonatype Nexus Repository Manager -->
     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-    <!-- SonarQube -->
-    <sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-    <sonar.organization>ao-apps</sonar.organization>
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
   <name>PragmaticKM Parent</name>
