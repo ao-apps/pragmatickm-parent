@@ -25,11 +25,11 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.aoapps</groupId><artifactId>ao-oss-parent</artifactId><version>1.21.2-POST-SNAPSHOT</version>
+    <groupId>com.aoapps</groupId><artifactId>ao-oss-parent</artifactId><version>1.21.3-SNAPSHOT</version>
     <relativePath>../../oss/parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.15.2-POST-SNAPSHOT</version>
+  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.15.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
