@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-25T22:33:43-05:00"
-    dateModified="2023-09-17T03:56:10Z"
+    dateModified="2023-09-17T04:26:17Z"
    >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -145,6 +145,10 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
                 <ao:a href="https://www.eclipse.org/lists/stp-dev/msg01624.html">NP-hard time complexity in "uses" resolvers</ao:a>.
               </li>
             </ol>
+          </li>
+          <li>
+            New <code>\${devMode}</code> property that will be <code>true</code> only when the "development" profile
+            is active.  "publish" profile may not be activated at the same time as "development" profile.
           </li>
         </ul>
       </changelog:release>
