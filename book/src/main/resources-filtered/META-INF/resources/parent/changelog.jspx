@@ -37,9 +37,9 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-25T22:33:43-05:00"
-    dateModified="2023-09-17T09:51:06Z"
+    dateModified="2023-09-18T01:27:39Z"
     allowRobots="false"
-   >
+  >
     <c:set var="latestRelease" value="1.17.1" />
     <c:if test="${
       fn:endsWith('@{project.version}', '-SNAPSHOT')
@@ -53,7 +53,15 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li>
+            Stripping any <code>-POST-SNAPSHOT</code> from versions used in Javadoc
+            <ao:a href="https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html#doctitle">doctitle</ao:a>
+            and <ao:a href="https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html#windowtitle">windowtitle</ao:a>.
+          </li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release
