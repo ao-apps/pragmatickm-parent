@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-25T22:33:43-05:00"
-    dateModified="2023-09-18T01:48:33Z"
+    dateModified="2023-09-18T02:34:28Z"
     allowRobots="false"
   >
     <c:set var="latestRelease" value="1.17.1" />
@@ -62,6 +62,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
             <ao:a href="https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html#packagesheader">packagesheader</ao:a>,
             and <ao:a href="https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html#windowtitle">windowtitle</ao:a>.
           </li>
+          <li>Added more robots <code>noindex, nofollow</code> to javadocs.</li>
         </ul>
       </changelog:release>
     </c:if>
