@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-25T22:33:43-05:00"
-    dateModified="2023-09-23T05:45:40Z"
+    dateModified="2023-09-24T02:34:17Z"
     allowRobots="false"
   >
     <c:set var="latestRelease" value="1.17.1" />
@@ -170,10 +170,6 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
         </li>
         <li>
           Set <ao:a href="https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html#ignoreNonCompile"><![CDATA[&lt;ignoreNonCompile&gt;true&lt;/ignoreNonCompile&gt;]]></ao:a>
-          as the default for all projects.
-        </li>
-        <li>
-          Set <ao:a href="https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html#ignoredUnusedDeclaredDependencies"><![CDATA[&lt;ignoredUnusedDeclaredDependencies&gt;&lt;dependency&gt;*:*:pom:*&lt;/dependency&gt;&lt;/ignoredUnusedDeclaredDependencies&lt;]]></ao:a>
           as the default for all projects.
         </li>
         <li>
