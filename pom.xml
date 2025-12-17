@@ -29,7 +29,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../../oss/parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>1.19.0-SNAPSHOT</version>
+  <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-parent</artifactId><version>2.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -79,7 +79,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
 
   <ciManagement>
     <system>Jenkins</system>
-    <url>https://jenkins.aoindustries.com/job/ao/job/pragmatickm-1.x/job/parent/</url>
+    <url>https://jenkins.aoindustries.com/job/ao/job/pragmatickm-2.x/job/parent/</url>
   </ciManagement>
   <!-- Only one allowed in POM:
   <ciManagement>
