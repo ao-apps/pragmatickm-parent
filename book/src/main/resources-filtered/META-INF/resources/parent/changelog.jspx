@@ -37,7 +37,7 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-25T22:33:43-05:00"
-    dateModified="2026-06-21T20:18:43Z"
+    dateModified="2026-07-07T03:38:59Z"
     allowRobots="false"
   >
     <c:set var="latestRelease" value="2.0.0" />
@@ -62,6 +62,10 @@ along with pragmatickm-parent.  If not, see <https://www.gnu.org/licenses/>.
               <li>Java 26 is now current stable</li>
               <li>Java 27 is new beta</li>
             </ol>
+          </li>
+          <li><code>development-with-javadocs</code> profile no longer requires <code>development</code> profile.
+            Projects should enable this profile when they have any downstream project that uses the
+            <code>javadoc</code> artifact under a <code>development</code> profile.
           </li>
         </ul>
       </changelog:release>
